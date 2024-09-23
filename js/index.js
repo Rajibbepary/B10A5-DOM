@@ -18,7 +18,7 @@ historyItem.className = "bg-slate-100 drop-shadow-md mt-24 p-10 rounded-md borde
 
 historyItem.innerHTML = `
 
-<h2 class="text-black text-2xl font-semibold">${x} Taka is a Donated for Flood at Noakhali, Bangladesh 2024</h2>
+<h2 class="text-black lg:text-2xl font-semibold">${x} Taka is a Donated for Flood at Noakhali, Bangladesh 2024</h2>
 <p class="mt-5">Date:${new Date()}</p>
 
 `
