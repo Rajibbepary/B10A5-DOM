@@ -13,6 +13,20 @@ document.getElementById('donation-now').addEventListener('click', function(event
 
   const x = document.getElementById('total-donation').innerHTML = inputValue;
 
+const historyItem = document.createElement("div");
+historyItem.className = "bg-white mt-32 p-10 rounded-md border-2 border-black w-9/12 text-center m-auto";
+
+historyItem.innerHTML = `
+
+<h2 class="text-black text-2xl font-semibold">${x} Taka is a Donated for Flood at Noakhali, Bangladesh 2024</h2>
+<p>Date:${new Date().toLocaleDateString()}</p>
+
+`
+const HistoryContainer = document.getElementById("History-list-container");
+HistoryContainer.insertBefore(historyItem, HistoryContainer.firstChild);
+
+
+
   const y = accountBalance - x;
     
   document.getElementById('account-balance').innerText =  y;
@@ -46,4 +60,6 @@ donationTab.classList.remove(
 );
 
 document.getElementById('parent-container').classList.add('hidden')
+
+document.getElementById('History-list-container').classList.remove('hidden');
 });
